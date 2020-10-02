@@ -98,7 +98,7 @@ function menuExtra() {
     var aparece = "nao";
     function danone(){
         if(aparece == "nao"){
-           document.getElementById('legendaDiv1').style.display = 'flex';
+           id('legendaDiv1').style.display = 'flex';
            var teste102 = meuStorage.getItem('qcsComigo');
            id('divparateste').innerHTML = "";
            id('divparateste').innerHTML = teste102;
@@ -106,11 +106,11 @@ function menuExtra() {
            objDiv.scrollTop = objDiv.scrollHeight;
            aparece = "sim"
         } else {
-        document.getElementById('legendaDiv1').style.display = 'none';
+        id('legendaDiv1').style.display = 'none';
         aparece = "nao"
         }
     }
-    document.getElementById("botaoTexto").onclick = danone
+    id("botaoTexto").onclick = danone
 
 
 
